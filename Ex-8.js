@@ -1,10 +1,10 @@
 const lervalor = require("readline-sync");
 
-let usuario = lervalor.question("Usuario: ");
-let senha = lervalor.question("Senha: ");
+let n = parseInt(lervalor.question("Digite um numero: "));
+let soma = 0;
 
-if (usuario === "admin" && senha === "1234") {
-  console.log("Login realizado com sucesso!");
-} else {
-  console.log("Usuário ou senha incorretos.");
+for (let i = 1; i <= n; i++) {
+  soma += i;
 }
+
+console.log(`A soma de 1 até ${n} é ${soma}`);
